@@ -1,236 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ZeeZen Digital | Digital Marketing Agency</title>
-
-    <meta name="description"
-          content="ZeeZen Digital provides Social Media Management, SEO, Google Ads and Meta Ads services for growing businesses.">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Zeezen – A modern digital marketing agency helping brands scale through strategy, creativity, and performance marketing."/>
+  <title>Zeezen | Digital Marketing Agency</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-<header>
-    <div class="container nav">
-        <div class="logo">ZeeZen Digital</div>
+<div id="cg"></div>
+<div id="pb"></div>
 
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#client">Client</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<!-- NAV -->
+<nav id="nav">
+  <a class="logo" href="#home">Zee<em>zen</em></a>
+  <ul class="nl">
+    <li><a href="#home" class="ac">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nb">Contact Us</a></li>
+  </ul>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mob" id="mob">
+  <a href="#home"     onclick="cm()">Home</a>
+  <a href="#about"    onclick="cm()">About</a>
+  <a href="#services" onclick="cm()">Services</a>
+  <a href="#faq"      onclick="cm()">FAQ</a>
+  <a href="#contact"  onclick="cm()">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="aurora"></div>
+  <div class="grid-bg"></div>
+  <div class="pts" id="pts"></div>
+  <!-- animated shapes -->
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+  <div class="shape s4"></div>
+  <!-- rings -->
+  <div class="ring r1"></div>
+  <div class="ring r2"></div>
+  <div class="ring r3"></div>
+
+  <div class="hero-inner">
+    <div class="chip"><div class="cd"></div>Digital Marketing Agency</div>
+    <h1>Grow Your Business<br><span class="hg">with Zeezen</span></h1>
+    <p class="hero-sub">A modern digital marketing agency helping brands scale through strategy, creativity, and performance marketing.</p>
+    <div class="brow">
+      <a href="#contact" class="btn bp">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Get Started
+      </a>
+      <a href="#services" class="btn bo">Our Services</a>
     </div>
-</header>
-
-<section class="hero">
-    <div class="container">
-
-        <h1>Grow Your Business With ZeeZen Digital</h1>
-
-        <p>
-            We help brands scale using SEO, Social Media Management,
-            Google Ads and Meta Ads.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#contact" class="btn primary">
-                Get Free Consultation
-            </a>
-
-            <a href="#services" class="btn secondary">
-                Explore Services
-            </a>
-        </div>
-
+    <div class="stats">
+      <div class="st"><div class="sn" data-count="200" data-suffix="+">0+</div><div class="sl">Clients Served</div></div>
+      <div class="ss"></div>
+      <div class="st"><div class="sn" data-count="5" data-suffix="x">0x</div><div class="sl">Avg. ROI Growth</div></div>
+      <div class="ss"></div>
+      <div class="st"><div class="sn" data-count="98" data-suffix="%">0%</div><div class="sl">Retention Rate</div></div>
+      <div class="ss"></div>
+      <div class="st"><div class="sn" data-count="4" data-suffix="+">0+</div><div class="sl">Years Experience</div></div>
     </div>
+  </div>
+  <div class="shi"><div class="sl2"></div>Scroll</div>
 </section>
 
-<section id="services">
-    <div class="container">
+<!-- TICKER -->
+<div class="tick-wrap">
+  <p class="tick-lbl">Trusted by growing brands worldwide</p>
+  <div class="tick" id="tick">
+    <span class="ti">Social Media Marketing<span class="td"></span></span>
+    <span class="ti">SEO Optimization<span class="td"></span></span>
+    <span class="ti">Google Ads<span class="td"></span></span>
+    <span class="ti">Branding & Identity<span class="td"></span></span>
+    <span class="ti">Content Strategy<span class="td"></span></span>
+    <span class="ti">Growth Marketing<span class="td"></span></span>
+    <span class="ti">Performance Analytics<span class="td"></span></span>
+    <span class="ti">Social Media Marketing<span class="td"></span></span>
+    <span class="ti">SEO Optimization<span class="td"></span></span>
+    <span class="ti">Google Ads<span class="td"></span></span>
+    <span class="ti">Branding & Identity<span class="td"></span></span>
+    <span class="ti">Content Strategy<span class="td"></span></span>
+    <span class="ti">Growth Marketing<span class="td"></span></span>
+    <span class="ti">Performance Analytics<span class="td"></span></span>
+  </div>
+</div>
+<div class="div"></div>
 
-        <h2>Our Services</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>📱 Social Media Management</h3>
-                <p>
-                    Content creation, posting,
-                    engagement and audience growth.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🔍 SEO</h3>
-                <p>
-                    Technical SEO, On-page SEO,
-                    Local SEO and Keyword Research.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🎯 Meta Ads</h3>
-                <p>
-                    Facebook and Instagram ad campaigns
-                    focused on sales and leads.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>💰 Google Ads</h3>
-                <p>
-                    Search Ads, Display Ads
-                    and Performance Max campaigns.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="stats">
-
-    <div class="container">
-
-        <div class="stat-grid">
-
-            <div class="stat-card">
-                <h3>10+</h3>
-                <p>Projects</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>100K+</h3>
-                <p>Leads Generated</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>5X</h3>
-                <p>Average ROAS</p>
-            </div>
-
-            <div class="stat-card">
-                <h3>95%</h3>
-                <p>Client Satisfaction</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="client">
-
-    <div class="container">
-
-        <h2>Featured Client</h2>
-
-        <div class="client-card">
-
-            <h3>ShinobiFashion</h3>
-
-            <p>
-                Social Media Management,
-                SEO, Google Ads and Meta Ads.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
+<!-- ABOUT -->
 <section id="about">
-
-    <div class="container">
-
-        <h2>About ZeeZen Digital</h2>
-
-        <p>
-            ZeeZen Digital is a growth-focused digital marketing agency.
-            We combine creativity, strategy and performance marketing
-            to help businesses attract more customers and increase revenue.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <div class="container">
-
-        <h2>Contact Us</h2>
-
-        <form id="contactForm">
-
-            <input type="text"
-                   placeholder="Your Name"
-                   required>
-
-            <input type="email"
-                   placeholder="Email Address"
-                   required>
-
-            <input type="tel"
-                   placeholder="Phone Number">
-
-            <textarea
-                rows="5"
-                placeholder="Tell us about your project"></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <div class="container">
-
-        <h3>ZeeZen Digital</h3>
-
-        <div class="social-links">
-
-            <a href="https://www.instagram.com/zeezendigital.in"
-               target="_blank">
-                Instagram
-            </a>
-
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Cg29aNzfK%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio&e=AUBZGH2Q1z63IB4QFYkV7oTZoLHQ8qs1P6s2U_uvVdE3UM-aMhsgIJASnj7DW4ClQF8d9ES_VokJec6e2CD8Su_JnCrx_b0t2aj1aOlelb0VczyAZuUnutmMZHCaIHD3uca36n4"
-               target="_blank">
-                Facebook
-            </a>
-
-            <a href="https://www.linkedin.com/company/zeezen-digital/"
-               target="_blank">
-                LinkedIn
-            </a>
-
+  <div class="sw">
+    <div class="ag">
+      <div class="avc rv">
+        <div class="tag">Our Numbers</div>
+        <h3 style="font-family:var(--fh);font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin-bottom:10px;">Results that speak<br>for themselves.</h3>
+        <p style="color:var(--muted);font-size:.9rem;line-height:1.7;">Every metric backed by real client campaigns and transparent reporting.</p>
+        <div class="amg">
+          <div class="am"><div class="amn">3.8x</div><div class="aml">Avg ROAS</div></div>
+          <div class="am"><div class="amn">+240%</div><div class="aml">Organic Traffic</div></div>
+          <div class="am"><div class="amn">12x</div><div class="aml">Leads Growth</div></div>
+          <div class="am"><div class="amn">48hr</div><div class="aml">Onboarding</div></div>
         </div>
+      </div>
+      <div class="at rv d2">
+        <div class="tag">About Zeezen</div>
+        <h2>Powering Digital Growth for Ambitious Brands</h2>
+        <p>Zeezen is a modern digital marketing agency focused on helping businesses grow through powerful online strategies. We specialize in branding, social media marketing, SEO, paid advertising, and content strategy.</p>
+        <p>Our approach combines creativity with data-driven performance to deliver measurable growth for every client. We don't just run campaigns — we build long-term digital ecosystems that generate leads, visibility, and revenue.</p>
+        <div class="pills">
+          <span class="pill">Social Media</span><span class="pill">SEO</span><span class="pill">Google Ads</span>
+          <span class="pill">Branding</span><span class="pill">Content Strategy</span><span class="pill">Growth Hacking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="div"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sw">
+    <div class="shd rv">
+      <div class="tag" style="justify-content:center;">What We Do</div>
+      <h2>Services Built to <span style="color:var(--blue-lt)">Scale</span></h2>
+      <p>Every service creates compounding digital growth — from first impression to lasting loyalty.</p>
+    </div>
+    <div class="sg">
+      <div class="sc rv d1">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+        <h3>Social Media Marketing</h3>
+        <p>Strategic content, community management, and paid social campaigns that turn followers into loyal customers and brand advocates.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="sc rv d2">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Search Engine Optimization</h3>
+        <p>Technical SEO, content optimization, and authority building strategies that drive sustained organic visibility and qualified traffic.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="sc rv d3">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Google Ads & Paid Advertising</h3>
+        <p>High-ROI Google and paid ad campaigns with precise targeting, continuous A/B testing, and conversion-focused landing strategies.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="sc rv d2">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Branding & Identity Design</h3>
+        <p>From logo creation to full visual identities — we craft brands that are instantly recognizable, emotionally resonant, and built to last.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="sc rv d3">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>Content Marketing Strategy</h3>
+        <p>Engaging blog posts, video scripts, and content calendars that position your brand as an industry authority and drive inbound leads.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="sc rv d4">
+        <div class="si"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Website Growth Optimization</h3>
+        <p>CRO audits, UX improvements, speed optimization, and growth hacking techniques that turn your website into a lead generation machine.</p>
+        <div class="sa"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="div"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="sw">
+    <div class="faq-hd rv">
+      <div class="tag" style="justify-content:center;">FAQ</div>
+      <h2>Questions & <span style="color:var(--blue-lt)">Answers</span></h2>
+      <p>Everything you need to know about working with Zeezen.</p>
+    </div>
+    <div class="faq-list rv d2">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What services does Zeezen offer?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Zeezen offers a full suite of digital marketing services including Social Media Marketing, Search Engine Optimization (SEO), Google Ads & Paid Advertising, Branding & Identity Design, Content Marketing Strategy, and Website Growth Optimization. We tailor each service to fit your business goals and budget.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How long before I see results?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Results vary by service. Paid advertising (Google Ads, social media ads) can show results within days to weeks. SEO and organic content typically take 3–6 months to gain momentum. We provide monthly reports so you can track progress every step of the way.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Do you work with small businesses or startups?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. We work with businesses of all sizes — from early-stage startups to established companies. Our strategies are scaled to match your budget and growth stage, ensuring you get maximum impact whether you're just starting out or looking to expand.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How does the onboarding process work?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Our onboarding is fast and smooth — typically completed within 48 hours. After you reach out, we schedule a discovery call to understand your brand, goals, and challenges. We then build a custom strategy blueprint and kick off execution within the week.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What makes Zeezen different from other agencies?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">We combine creative excellence with data-driven strategy — never one without the other. You get a dedicated team (not a revolving door of account managers), full transparency with live reporting dashboards, and strategies built specifically for your brand — not cookie-cutter templates.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How do I get started with Zeezen?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Simple — just fill out the contact form below or send us an email at zee7zen@gmail.com. We'll respond within 24 hours to schedule a free strategy consultation. No commitment required, just a conversation about your goals.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Do you offer long-term contracts or flexible plans?</span>
+          <div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">We offer both. You can start with a short-term project or a monthly retainer. While we recommend a minimum of 3 months to see meaningful results, we don't lock you into rigid long-term contracts. Our clients stay because of results, not paperwork.</div></div>
+      </div>
 
     </div>
+  </div>
+</section>
+<div class="div"></div>
 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sw">
+    <div class="contact-inner rv">
+      <div class="tag">Get In Touch</div>
+      <h2>Let's Grow Your Business <span style="color:var(--blue-lt)">Together</span></h2>
+      <p>Ready to scale? Tell us about your brand and goals — we'll get back to you within 24 hours.</p>
+      <div class="fcard">
+        <div id="fw">
+          <h3 style="font-family:var(--fh);font-size:1.3rem;font-weight:700;letter-spacing:-.02em;margin-bottom:28px;position:relative;z-index:1;">Send a Message</h3>
+          <div class="fg"><label for="name">Your Name</label><input type="text" id="name" placeholder="John Doe" autocomplete="name"/><div class="ferr" id="ne">Please enter your name.</div></div>
+          <div class="fg"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@company.com" autocomplete="email"/><div class="ferr" id="ee">Please enter a valid email.</div></div>
+          <div class="fg"><label for="msg">Message</label><textarea id="msg" rows="5" placeholder="Tell us about your business and goals..."></textarea><div class="ferr" id="me">Please enter your message.</div></div>
+          <button class="btn bp bsend" id="sb" onclick="handleSubmit()">
+            <span class="bt" style="display:flex;align-items:center;gap:9px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Send Message</span>
+            <span class="ld"></span>
+          </button>
+        </div>
+        <div class="fsuc" id="fs">
+          <div class="sring"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>Message Sent! 🎉</h3>
+          <p>Thanks for reaching out. We've received your message and will get back to you within 24 hours.</p>
+          <div class="sbadge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Sent to zee7zen@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <div class="fb">
+      <a class="logo" href="#home">Zee<em>zen</em></a>
+      <p>Helping businesses grow through digital innovation, creative strategy, and data-driven performance marketing.</p>
+      <div class="fsoc-row">
+        <a class="fsoc" href="https://instagram.com/zeezendigital.in" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a class="fsoc" href="mailto:zee7zen@gmail.com" aria-label="Email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Social Media Marketing</a></li>
+        <li><a href="#services">Search Engine Optimization</a></li>
+        <li><a href="#services">Google Ads & Paid Media</a></li>
+        <li><a href="#services">Branding & Identity</a></li>
+        <li><a href="#services">Content Strategy</a></li>
+        <li><a href="#services">Website Optimization</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:zee7zen@gmail.com">zee7zen@gmail.com</a></li>
+        <li><a href="https://instagram.com/zeezendigital.in" target="_blank" rel="noopener">@zeezendigital.in</a></li>
+        <li><a href="#contact">Send a Message</a></li>
+      </ul>
+      <div style="margin-top:22px;">
+        <div class="foot-badge"><div class="foot-badge-dot"></div>Available for new projects</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 Zeezen Digital. All rights reserved.</p>
+    <p>Helping businesses grow through digital innovation</p>
+    <a href="mailto:zee7zen@gmail.com">zee7zen@gmail.com</a>
+  </div>
 </footer>
-
-<a href="https://wa.me/919342796823"
-   class="whatsapp"
-   target="_blank">
-    💬
-</a>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
