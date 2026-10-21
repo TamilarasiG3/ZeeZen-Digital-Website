@@ -5,9 +5,9 @@
 
 // ── EmailJS Credentials ──────────────────────
 // Replace these with your actual values from emailjs.com
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
-    const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
-    const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY  = "0cMtHLxFTn8MHfWtp";
+    const EMAILJS_SERVICE_ID  = "service_au93wwg";
+    const EMAILJS_TEMPLATE_ID = "template_frwhvdk";
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
 // ── Main Logic ───────────────────────────────
