@@ -76,9 +76,9 @@ function handleSubmit(){
     from_name:document.getElementById('name').value.trim(),
     from_email:document.getElementById('email').value.trim(),
     message:document.getElementById('msg').value.trim(),
-    to_email:'zee7zen@gmail.com',
+    to_email:'zeezendigital.in@gmail.com',
   }).then(()=>{document.getElementById('fw').style.display='none';document.getElementById('fs').classList.add('on');})
-  .catch(err=>{console.error(err);btn.classList.remove('loading');btn.disabled=false;const b=document.createElement('p');b.id='sendErrBanner';b.style.cssText='color:#f87171;font-size:.82rem;margin-top:14px;text-align:center;';b.textContent='Something went wrong. Please try again or email zee7zen@gmail.com directly.';btn.after(b);});
+  .catch(err=>{console.error(err);btn.classList.remove('loading');btn.disabled=false;const b=document.createElement('p');b.id='sendErrBanner';b.style.cssText='color:#f87171;font-size:.82rem;margin-top:14px;text-align:center;';b.textContent='Something went wrong. Please try again or email zeezendigital.in@gmail.com directly.';btn.after(b);});
 }
 ['name','email','msg'].forEach(id=>{
   document.getElementById(id).addEventListener('input',function(){this.classList.remove('err');const m={name:'ne',email:'ee',msg:'me'};document.getElementById(m[id]).classList.remove('on');});
