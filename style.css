@@ -224,3 +224,8 @@
   @media(max-width:1024px){.sg{grid-template-columns:1fr 1fr}.ag{grid-template-columns:1fr;gap:40px}.avc{display:none}.foot-top{grid-template-columns:1fr 1fr;gap:36px}}
   @media(max-width:768px){:root{--nav-h:64px}.nl{display:none}.ham{display:flex}.mob{display:flex}.sg{grid-template-columns:1fr}.stats .ss{display:none}.stats{gap:24px}.foot-top{grid-template-columns:1fr 1fr}.foot-bottom{flex-direction:column;align-items:flex-start}}
   @media(max-width:540px){.brow{flex-direction:column;align-items:center}.btn{width:100%;max-width:300px;justify-content:center}.foot-top{grid-template-columns:1fr}.fcard{border-radius:16px}.fg input,.fg textarea{font-size:16px}.faq-q span{font-size:.95rem}}
+
+/* ── NAV LOGO (top-left) ── */
+.logo-nav img{display:block;height:34px;width:auto;filter:drop-shadow(0 0 10px rgba(59,130,246,.35));transition:transform .3s,filter .3s}
+.logo-nav:hover img{transform:scale(1.04);filter:drop-shadow(0 0 16px rgba(59,130,246,.6))}
+@media(max-width:540px){.logo-nav img{height:28px}}
